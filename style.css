@@ -1,5 +1,7 @@
  
-}@font-face {
+body {
+  font-family: 'Pudelinka', Arial, sans-serif;
+}}@font-face {
 	font-family: “Pudelinka”;
 	src: url(”Fonts/pudelinka.ttf” ) format('truetype’);
 	font-weight: normal;
