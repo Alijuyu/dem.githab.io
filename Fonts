@@ -1,1 +1,6 @@
 https://fonts-online.ru/fonts/cbeebies/download
+мой-сайт/
+├── index.html
+├── style.css
+└── fonts/
+    └── Pudelinka.ttf   ← шрифт теперь внутри проекта!
