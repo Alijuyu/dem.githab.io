@@ -64,18 +64,26 @@
  <div class="media-box">
    
   <p>📽️ <strong>Видео с колядкой:</strong></p>
-  <video controls>
+  <video controls><source src="newTree.mp4" type="video/mp4">
+<a href="kolyadka.odt" download>
     <source src="newTree.mp4" type="video/mp4">
     Ваш браузер не поддерживает видео. <a href="newTree.mp4" download>Скачать видео</a>.
   </video>
 
-  <p>🎶 <a href="kolyadka.odt" download="kolyadka.odt">Скачать колядку (LibreOffice)</a></p>
-</div> <div class="media-box">
+   
     <p>📽️ <strong>Видео с колядкой:</strong></p>
     <video controls>
       <source src="newTree.mp4" type="video/mp4">
+     ffmpeg -i input.mov -c:v libx264 -crf 23 -c:a aac -b:a 128k newTree.mp4
       Ваш браузер не поддерживает видео. <a href="newTree.mp4" download>Скачать видео</a>.
-    </video>
+    </video><div class="media-box">
+  <p>📽️ <strong>Видео с колядкой:</strong></p>
+  <video controls width="100%">
+    <source src="newTree.mp4" type="video/mp4">
+    <a href="newTree.mp4">Скачать видео</a>
+  </video>
+  <p>🎶 <a href="kolyadka.odt" download="kolyadka.odt">Скачать колядку (LibreOffice)</a></p>
+</div>
 
     <p>🎶 <a href="Kolyadka(1).odt" download>Скачать колядку (LibreOffice Writer)</a></p>
   </div>
