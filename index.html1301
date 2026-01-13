@@ -1,3 +1,3 @@
-<p><a href="mailto:psofa851@gmail.com">Напишите мне</a></p>
-<h1>Структура доменного имени моего сайта</h1>
-<p>Домен <code>durmanchic.github.io</code> состоит из трёх уровней: <code>durmanchic</code> (поддомен), <code>github</code> (второй уровень) и <code>io</code> (домен верхнего уровня).</p>
+ <p><a href="mailto:psofa851@gmail.com">Напишите мне</a></p>
+<p>Доменное имя моего сайта — <code>durmanchic.github.io</code>.</p>
+<p>Оно состоит из трёх уровней: <code>io</code> (TLD), <code>github</code> (SLD) и <code>durmanchic</code> (поддомен).</p>
