@@ -1,159 +1,285 @@
  <!DOCTYPE html>
 <html lang="ru">
 <head>
-   <style>
-  .snowflake {
-    position: fixed;
-    top: -20px;
-    color: #fff;
-    font-size: 24px;
-    text-shadow: 0 0 5px rgba(255,255,255,0.8);
-    user-select: none;
-    z-index: 9999;
-    animation: fall linear forwards;
-  }
-
-  @keyframes fall {
-    to {
-      transform: translateY(105vh) rotate(360deg);
+  <meta charset="UTF-8">
+  <title>Мой блог</title>
+  <style>
+    /* Общий стиль сайта */
+    body {
+      background-color: #e6f7ff; /* Нежно-голубой фон */
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      color: #2c3e50;
     }
-  }
-</style>
-
-<script>
-  // Создаём снежинки при загрузке страницы
-  document.addEventListener('DOMContentLoaded', () => {
-    const snowflakes = '❄❅❆';
-    const container = document.body;
-
-    for (let i = 0; i < 50; i++) {
-      const snow = document.createElement('div');
-      snow.innerHTML = snowflakes.charAt(Math.floor(Math.random() * snowflakes.length));
-      snow.classList.add('snowflake');
-      
-      // Случайная позиция по горизонтали
-      snow.style.left = Math.random() * 100 + 'vw';
-      // Случайная скорость (от 5 до 15 секунд)
-      snow.style.animationDuration = (5 + Math.random() * 10) + 's';
-      // Случайный размер
-      const size = 0.5 + Math.random() * 1.5;
-      snow.style.fontSize = (12 + size * 20) + 'px';
-      snow.style.opacity = 0.4 + Math.random() * 0.6;
-
-      container.appendChild(snow);
+    
+    /* Стиль для снежинок */
+    .snowflake {
+      position: fixed;
+      top: -20px;
+      color: #fff;
+      font-size: 24px;
+      text-shadow: 0 0 5px rgba(255,255,255,0.8);
+      user-select: none;
+      z-index: 9999;
+      animation: fall linear forwards;
     }
-  });
-</script>
-<meta charset="UTF-8">
-<meta charset="UTF-8">
-<title>Мой блог</title>
-  <link type="text/css" rel="stylesheet" href="style.css" />
- <style>
-  @font-face {
-    font-family: 'pudelinka.ttf';
-    src: url('pudelinka.ttf') format('truetype');
-  }
-  .pudelinka-only {
-    font-family: 'pudelinka.ttf', cursive;
-  }
-</style>
-  
+
+    @keyframes fall {
+      to {
+        transform: translateY(105vh) rotate(360deg);
+      }
+    }
+    
+    /* Стиль для заголовков */
+    h2 {
+      color: #1a5276;
+      border-bottom: 2px dashed #3498db;
+      padding-bottom: 5px;
+      margin-top: 30px;
+    }
+    
+    /* Стиль для цитат */
+    blockquote {
+      border-left: 4px solid #3498db;
+      padding: 10px 15px;
+      margin: 20px 0;
+      background-color: rgba(255, 255, 255, 0.7);
+      border-radius: 0 8px 8px 0;
+    }
+    
+    /* Специальный шрифт Pudelinka только для первой цитаты */
+    @font-face {
+      font-family: 'Pudelinka';
+      src: url('pudelinka.ttf') format('truetype');
+    }
+    
+    .pudelinka-only {
+      font-family: 'Pudelinka', cursive;
+      font-size: 28px;
+      text-align: center;
+      color: #2980b9;
+      letter-spacing: 2px;
+    }
+    
+    /* Стиль для ссылок */
+    a {
+      color: #2980b9;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    
+    a:hover {
+      text-decoration: underline;
+      color: #1a5276;
+    }
+    
+    /* Стиль для блоков ссылок */
+    .link-block {
+      background-color: rgba(255, 255, 255, 0.85);
+      border-radius: 8px;
+      padding: 12px 15px;
+      margin: 10px 0;
+      border-left: 4px solid #3498db;
+      display: inline-block;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    
+    /* Стиль для изображения */
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 20px auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    
+    /* Стиль для кода */
+    code {
+      background-color: #f8f9f9;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+      color: #e74c3c;
+    }
+    
+    /* Стиль для списка */
+    ul, ol {
+      padding-left: 20px;
+      margin: 15px 0;
+    }
+    
+    li {
+      margin-bottom: 8px;
+    }
+    
+    /* Стиль для математических формул */
+    .math-formula {
+      font-style: italic;
+      color: #2c3e50;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 3px 6px;
+      border-radius: 3px;
+    }
+    
+    /* Стиль для подвала */
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #bdc3c7;
+      color: #7f8c8d;
+      font-size: 0.9em;
+    }
+    
+    /* Стиль для кнопки "Назад" */
+    .back-button {
+      display: inline-block;
+      background-color: #3498db;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 20px;
+      margin: 15px 0;
+      font-weight: bold;
+      transition: all 0.3s;
+    }
+    
+    .back-button:hover {
+      background-color: #2980b9;
+      transform: scale(1.05);
+    }
+    
+    /* Стиль для преформатированного текста */
+    pre {
+      background-color: #f8f9f9;
+      padding: 15px;
+      border-radius: 8px;
+      overflow-x: auto;
+      font-size: 0.9em;
+      border: 1px solid #ddd;
+      margin: 15px 0;
+    }
+    
+    /* Стиль для деталей */
+    details {
+      background-color: rgba(255, 255, 255, 0.85);
+      border-radius: 8px;
+      padding: 15px;
+      margin: 15px 0;
+      border: 1px solid #bdc3c7;
+    }
+    
+    summary {
+      font-weight: bold;
+      color: #2980b9;
+      cursor: pointer;
+      padding: 5px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    
+    summary:hover {
+      background-color: #f1f9ff;
+    }
+  </style>
 </head>
 <body>
-  <blockquote class=“q”>Путешествие в тысячу миль начинается с одного шага (Лао Цзы) </blockquote>
-   </p>
-  <h2>6 декабря,2025</h2>
-   Поздравления с наступающим 2026 годом читайте<a href="Congratulations2026.html"> здесь.</a>
-    <h2> 15 октября , 2025</h2>
-    <style>
-  @font-face {
-    font-family: 'pudelinka.ttf';
-    src: url('pudelinka.ttf') format('truetype');
-  }
-  .pudelinka-only {
-    font-family: 'pudelinka.ttf', cursive;
-  }
-</style>
-  
-<p>
-Я сделала Новогодние кроссворды для сайта <a href="сайт моего друга"  title="Блог моего друга">Сайт моего друга</a>
-</p>
-<h2> 1 сентября , 2025</h2>
-<blockquote>Путешествие в тысячу миль начинается с одного шага (Лао Цзы) </blockquote>
-<p>
-Оставляю в прошлом скучную неинтересную локальную файловую систему ради Всемирной паутины.
-</p>
-    <a href="index.html">Назад</a>
-  <p>
- <img src="Icons/icon.png" alt="Новый год">
-  </p>
-</body>
-   </p>
-  <h2> 19 декабря,2025</h2>
-<div class="link-block">
-    <a href="колядки.odt"target="_blank" rel="noopener">
-      📄 Скачать документ (PDF) </a>
-  </div>
- 
-  <div class="link-block">
-    <a href="019b3561-1ef2-7bf8-8569-0a3016cb61e5(1).mp4" target="_blank" rel="noopener">
-      🎥 Посмотреть видео 
-    </a>
-  </div>
-   </p>
-   <h2> 13 января, 2026</h2>
-  <p>Доменное имя
-   <code>Alijuyu.github.io</code> состоит из
-   : <strong>Alijuyu</strong> (поддомен, 3-й уровень), <strong>github</strong> (домен 2-го уровня) и <strong>io</strong> (домен верхнего уровня, TLD). </p>
-  <a href="mailto:vip.balalaeva52@mail.ru">Напишите мне</a>
-  </p>
-  <h2>17 января, 2026</h2>
-<p><strong>Решение шифров Цезаря:</strong></p>
+  <!-- Скрипт для снежинок -->
+  <script>
+    // Создаём снежинки при загрузке страницы
+    document.addEventListener('DOMContentLoaded', () => {
+      const snowflakes = '❄❅❆';
+      const container = document.body;
 
+      for (let i = 0; i < 50; i++) {
+        const snow = document.createElement('div');
+        snow.innerHTML = snowflakes.charAt(Math.floor(Math.random() * snowflakes.length));
+        snow.classList.add('snowflake');
+        
+        // Случайная позиция по горизонтали
+        snow.style.left = Math.random() * 100 + 'vw';
+        // Случайная скорость (от 5 до 15 секунд)
+        snow.style.animationDuration = (5 + Math.random() * 10) + 's';
+        // Случайный размер
+        const size = 0.5 + Math.random() * 1.5;
+        snow.style.fontSize = (12 + size * 20) + 'px';
+        snow.style.opacity = 0.4 + Math.random() * 0.6;
+
+        container.appendChild(snow);
+      }
+    });
+  </script>
+
+  <!-- Первая цитата с шрифтом Pudelinka -->
+  <blockquote class="pudelinka-only">Путешествие в тысячу миль начинается с одного шага (Лао Цзы)</blockquote>
+  
+  <h2>13 января, 2026</h2>
+  <p>Доменное имя <code>Alijuyu.github.io</code> состоит из: <strong>Alijuyu</strong> (поддомен, 3-й уровень), <strong>github</strong> (домен 2-го уровня) и <strong>io</strong> (домен верхнего уровня, TLD).</p>
+  
+  <h2>17 января, 2026</h2>
+  <p><strong>Решение шифров Цезаря:</strong></p>
   <ol>
-  <li>
-    <p><strong>Определение ключей шифра Цезаря:</strong></p>
-    <ul>
-      <li>а. АПЕЛЬСИН → САЦЬНВЩЮ<br>
-        Ключ: <strong>18</strong></li>
-      <li>б. АБРИКОС → ЫЬЛГЕЙМ<br>
-        Ключ: <strong>28</strong> (эквивалентно –4 по модулю 32)</li>
-    </ul>
-  </li>
-  <li>
-    <p><strong>Расшифровка сообщений:</strong></p>
-    <ul>
-      <li>а. ФХНЗКЧ → <strong>ПРИВЕТ</strong> (ключ = 5)</li>
-      <li>б. ЦЩЕБФ → <strong>ВЕСНА</strong> (ключ = 20)</li>
-    </ul>
-  </li>
-  <li>
-    <p><strong>Шифрование фамилии с ключом 10:</strong><br>
-      Пример для фамилии <em>КАЛДАРОВА</em>:<br>
-      К→Ф, А→К, Л→Х, Д→О, А→К, Р→Ъ, О→Ш, В→М, А→К, → <strong>ФКХОКЪШМК</strong>.<br>
-    </p>
-  </li>
-</ol>
-  <p>Иконки: 
-    <a href="https://www.flaticon.com/ru/free-icons/-        " title="Рождественская елка иконки">Рождественская елка иконки от Victoruler - Flaticon</a>
-<h2>20 января, 2026</h2>
-<ul>
-  <li>Простые числа: \( p = 11 \), \( q = 13 \)</li>
-  <li>Модуль: \( n = 143 \)</li>
-  <li>Функция Эйлера: \( \varphi(n) = 120 \)</li>
-  <li>Открытая экспонента: \( e = 7 \)</li>
-  <li>Закрытая экспонента: \( d = 103 \)</li>
-  <li><strong>Открытый ключ:</strong> \( (n, e) = (143, 7) \)</li>
-  <li><strong>Закрытый ключ:</strong> \( (n, d) = (143, 103) \)</li>
-</ul
-<ul>
-  <li>Используется <strong>3072-битный ключ</strong></li>
-  <li>Модуль \( n \) содержит <strong>925 десятичных цифр</strong> (больше 700!)</li>
-</ul>
-  <summary>Реальный 3072-битный модуль \( n \) (925 цифр)</summary>
-  <pre>
-2519590847565789349402718324004839857142928212620403202777713783604366202070759555626401852588078440691829064124951508218929855914917618450280812355070783322347117806051370628060873673717712095940799535645166877127807844069182906412495150821892985591491761845028081235507078332234711780605137062806087367371771209594079953564516687712780784406918290641249515082189298559149176184502808123550707833223471178060513706280608736737177120959407995356451668771278078440691829064124951508218929855914917618450280812355070783322347117806051370628060873673717712095940799535645166877127807844069182906412495150821892985591491761845028081235507078332234711780605137062806087367371771209594079953564516687712780784406918290641249515082189298559149176184502808123550707833223471178060513706280608736737177120959407995356451668771278078440691829064124951508218929855914......
-  </pre>
-<p>Это число — произведение двух простых чисел по ~1536 бит каждый. Его длина: <strong>925 десятичных цифр</strong>.</p>
-</body>
-</html>     добавь шрифт pudelinka.ttf  на одну строчку
+    <li>
+      <p><strong>Определение ключей шифра Цезаря:</strong></p>
+      <ul>
+        <li>а. АПЕЛЬСИН → САЦЬНВЩЮ<br>Ключ: <strong>18</strong></li>
+        <li>б. АБРИКОС → ЫЬЛГЕЙМ<br>Ключ: <strong>28</strong> (эквивалентно –4 по модулю 32)</li>
+      </ul>
+    </li>
+    <li>
+      <p><strong>Расшифровка сообщений:</strong></p>
+      <ul>
+        <li>а. ФХНЗКЧ → <strong>ПРИВЕТ</strong> (ключ = 5)</li>
+        <li>б. ЦЩЕБФ → <strong>ВЕСНА</strong> (ключ = 20)</li>
+      </ul>
+    </li>
+    <li>
+      <p><strong>Шифрование фамилии с ключом 10:</strong><br>
+      Пример для фамилии <em>Alijuyu</em>:<br>
+      A→K, L→V, I→S, J→T, U→E, Y→I, U→E → <strong>KVSTEIE</strong>.<br>
+      </p>
+    </li>
+  </ol>
+  
+  <h2>19 декабря, 2025</h2>
+  <div class="link-block">
+    <a href="колядки.odt" target="_blank" rel="noopener">📄 Скачать документ (ODT)</a>
+  </div>
+  <div class="link-block">
+    <a href="019b3561-1ef2-7bf8-8569-0a3016cb61e5(1).mp4" target="_blank" rel="noopener">🎥 Посмотреть видео</a>
+  </div>
+  
+  <h2>6 декабря, 2025</h2>
+  <p>Поздравления с наступающим 2026 годом читайте <a href="Congratulations2026.html">здесь</a>.</p>
+  
+  <h2>15 октября, 2025</h2>
+  <p>Я сделала Новогодние кроссворды для сайта <a href="сайт моего друга" title="Блог моего друга">Сайт моего друга</a></p>
+  
+  <h2>1 сентября, 2025</h2>
+  <blockquote>Путешествие в тысячу миль начинается с одного шага (Лао Цзы)</blockquote>
+  <p>Оставляю в прошлом скучную неинтересную локальную файловую систему ради Всемирной паутины.</p>
+  
+  <a href="index.html" class="back-button">Назад</a>
+  
+  <p>
+    <img src="https://via.placeholder.com/400x200/e6f7ff/2980b9?text=Alijuyu+Blog" alt="Новый год">
+  </p>
+  
+  <h2>20 января, 2026</h2>
+  <ul>
+    <li>Простые числа: <span class="math-formula">p = 11</span>, <span class="math-formula">q = 13</span></li>
+    <li>Модуль: <span class="math-formula">n = 143</span></li>
+    <li>Функция Эйлера: <span class="math-formula">φ(n) = 120</span></li>
+    <li>Открытая экспонента: <span class="math-formula">e = 7</span></li>
+    <li>Закрытая экспонента: <span class="math-formula">d = 103</span></li>
+    <li><strong>Открытый ключ:</strong> <span class="math-formula">(n, e) = (143, 7)</span></li>
+    <li><strong>Закрытый ключ:</strong> <span class="math-formula">(n, d) = (143, 103)</span></li>
+  </ul>
+  
+  <ul>
+    <li>Используется <strong>3072-битный ключ</strong></li>
+    <li>Модуль <span class="math-formula">n</span> содержит <strong>925 десятичных цифр</strong>
