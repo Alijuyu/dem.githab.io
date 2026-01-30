@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,7 @@
     <style>
         /* === НОВОГОДНИЙ СТИЛЬ — ПОЗДРАВЛЕНИЕ 2026 === */
         body {
-            background: linear-gradient(135deg, #e6f7ff 0%, #f0f9ff 100%); /* Нежно-голубой градиент */
+            background-color: #e3f2fd; /* Чистый сплошной нежно-голубой фон */
             font-family: 'Times New Roman', Times, serif;
             color: #2c2c2c;
             margin: 0;
@@ -16,7 +16,7 @@
         }
 
         h1 {
-            color: #1a5276; /* Темно-голубой вместо бордового для гармонии */
+            color: #1a5276;
             text-align: center;
             font-size: 2.6em;
             margin: 20px 0 30px;
@@ -25,8 +25,8 @@
         }
 
         h2 {
-            color: #2980b9; /* Голубой акцент */
-            border-left: 6px solid #3498db; /* Светло-голубой */
+            color: #2980b9;
+            border-left: 6px solid #3498db;
             padding-left: 12px;
             margin-top: 35px;
             font-size: 1.8em;
@@ -45,8 +45,9 @@
             font-style: italic;
             padding: 12px 20px;
             margin: 25px 40px;
-            background-color: rgba(52, 152, 219, 0.08);
+            background-color: rgba(255, 255, 255, 0.7); /* Полупрозрачный белый для лучшей читаемости */
             font-family: Georgia, serif;
+            border-radius: 0 8px 8px 0;
         }
 
         /* Ссылка "Назад" */
@@ -62,7 +63,7 @@
         }
 
         a:hover {
-            background-color: #2980b9;
+            background-color: #1a5276;
             color: white;
             transform: translateY(-2px);
         }
@@ -78,26 +79,32 @@
         }
 
         .crossword li strong {
-            color: #2980b9;
+            color: #1a5276;
         }
 
-        /* Английский блок — голубой акцент */
+        /* Английский блок */
         #english-crossword {
-            background-color: #f8fbff;
+            background-color: #ffffff;
             padding: 15px;
             border-radius: 10px;
-            border: 1px dashed #a3d1ff;
+            border: 1px solid #bbdefb;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
         }
 
         /* Подпись автора */
         .author-signature {
             text-align: right;
             font-style: italic;
-            color: #2980b9;
+            color: #1a5276;
             margin-top: 30px;
             padding-top: 15px;
             border-top: 1px dashed #3498db;
             font-weight: bold;
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 15px;
+            border-radius: 8px;
+            max-width: 400px;
+            margin-left: auto;
         }
 
         /* Адаптация под мобильные */
@@ -105,6 +112,10 @@
             h1 { font-size: 2em; }
             h2 { font-size: 1.4em; }
             p.quote { margin: 20px 10px; }
+            .author-signature {
+                margin-right: 10px;
+                max-width: 100%;
+            }
         }
     </style>
 </head>
@@ -159,5 +170,4 @@
         <small>Создано специально для праздника 2026</small>
     </div>
 </body>
-</html> 
-     
+</html>
