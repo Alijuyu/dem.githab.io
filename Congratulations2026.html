@@ -1,19 +1,167 @@
- 
-
-```html
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Поздравление и структура домена</title>
     
-    <!-- НАДЕЖНОЕ ПОДКЛЮЧЕНИЕ ШРИФТА (работает даже без интернета!) -->
+    <!-- Подключение шрифта Pudelinka -->
+   <link href="https://fonts.googleapis.com/css2?family=Pudelinka&display=swap  " rel="stylesheet">  
+
     <style>
-        /* ВСТРОЕННЫЙ ШРИФТ Pudelinka через @font-face (base64) */
-        @font-face {
-            font-family: 'Pudelinka';
-            font-style: normal;
-            font-weight: 400;
-            font-display: swap;
-            src: url('data:font/woff2;charset=utf-8;base64,d09GMgABAAAAAAYwAAsAAAAACXgAAAOAAAABlgAAAAAAAAAAAAAAAAAAAAAAAAAAAABHU1VCAAABCAAAADMAAABCsZ80dU9TLzIAAAE8AAAARAAAAFZW7lZPY21hcAAAAYAAAABrAAABwmTfpbRnbHlmAAACNAAAADwAAAA8Y/frHmhlYWQAAAJoAAAANgAAADYMaftpaGhlYQAAAqgAAAAgAAAAJAe+Bw5obXR4AAACwAAAAAgAAAAIBgAAAGxvY2EAAALIAAAACgAAAAoGbgCSbWF4cAAAAuAAAAAfAAAAIAEVAF5uYW1lAAADAAAAAUkAAAJtPlT+fXBvc3QAAAVgAAAAQgAAAFJm4nOzeJxjYGRgYGJgYmRmYGBkAAIWBkYGBiCGBMAAAAB4nGNgZGBgYGXwYGBjAAEmIOYCQgaG/2A+AwAQkQF4AHicY2FgYGaAYBkGRgYQiAHyGMF8FgYEkILpMTCwMjDAckBUADIuMJQwsjBmsDIwsDJqMGoBHVjAyMHIxcjLKM5owBjE+P//f4b///7//v/z/4//3/9/+/+N/6/+v/j/3P8z/0/8P/H/+P9j/4/+P/L/8P9D/w/+P/D/wP/9//f93/t/z9/d/3b92/l3x9/tf7f93fJ3098Nf9f/XfN39d8Vf5f/Xfp3yd/FAIbBKk0AAHicY2dgYGQAgqtL1uji+W0+MnAzMYDAza76DAxMf//9+w8A6P8M3gB4nIWRPUvDUBiGn9RWrYgOIlQQcXBwEAdxcHBwEB0cHBwcnBwcnBwcnBwcnBz8A4KDg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4......
+        /* === НОВОГОДНИЙ СТИЛЬ + БЛОГ === */
+        body {
+            background: linear-gradient(135deg, #e6f7e6 0%, #f0f8f0 100%);
+            font-family: 'Pudelinka', cursive;
+            color: #2c2c2c;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* ПАДАЮЩИЕ НОВОГОДНИЕ ПОДАРКИ */
+        .gift {
+            position: absolute;
+            top: -50px;
+            width: 30px;
+            height: 30px;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2" fill="%23D4AF37"/><rect x="9" y="9" width="6" height="6" fill="%238B0000"/></svg>') no-repeat center;
+            background-size: contain;
+            pointer-events: none;
+            z-index: 1000;
+            animation: fall linear forwards;
+        }
+
+        @keyframes fall {
+            to {
+                transform: translateY(100vh);
+            }
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        h1 {
+            color: #8B0000;
+            font-size: 2.6em;
+            margin: 20px 0 30px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+            font-weight: bold;
+        }
+
+        h2 {
+            color: #006400;
+            border-left: 6px solid #D4AF37;
+            padding-left: 12px;
+            margin: 35px 0 20px;
+            font-size: 1.8em;
+            text-align: left;
+        }
+
+        p {
+            font-size: 1.1em;
+            margin-bottom: 18px;
+            padding: 0 10px;
+        }
+
+        .quote {
+            color: #D4AF37;
+            border-left: 4px solid #8B0000;
+            font-style: italic;
+            padding: 12px 20px;
+            margin: 25px 40px;
+            background-color: rgba(212, 175, 55, 0.08);
+            font-family: 'Pudelinka', cursive;
+        }
+
+        a {
+            color: #8B0000;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 16px;
+            border: 2px solid #8B0000;
+            border-radius: 25px;
+            display: inline-block;
+            transition: all 0.3s ease;
+            font-family: 'Pudelinka', cursive;
+        }
+
+        a:hover {
+            background-color: #8B0000;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .crossword ol {
+            padding-left: 30px;
+        }
+
+        .crossword li {
+            margin: 12px 0;
+            padding: 6px 0;
+        }
+
+        .crossword li strong {
+            color: #8B0000;
+        }
+
+        #english-crossword {
+            background-color: #fffaf0;
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px dashed #d2b48c;
+        }
+
+        pre {
+            font-family: 'Pudelinka', cursive;
+        }
+
+        blockquote {
+            font-family: 'Pudelinka', cursive;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2em; }
+            h2 { font-size: 1.4em; }
+            .quote { margin: 20px 10px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Генерация падающих подарков -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const body = document.body;
+            const giftCount = 25;
+
+            for (let i = 0; i < giftCount; i++) {
+                const gift = document.createElement('div');
+                gift.classList.add('gift');
+                gift.style.left = Math.random() * 100 + 'vw';
+                gift.style.animationDuration = (Math.random() * 5 + 5) + 's';
+                gift.style.opacity = Math.random() * 0.7 + 0.3;
+                gift.style.fontSize = (Math.random() * 20 + 15) + 'px';
+                body.appendChild(gift);
+
+                // Удаляем элемент после завершения анимации, чтобы не перегружать DOM
+                setTimeout(() => {
+                    gift.remove();
+                }, 10000);
+            }
+        });
+    </script>
+
+    <!-- Поздравление -->
+    <h1>Поздравление с Новым 2026 годом!</h1>
+
+    <p>Приближается один из любимых праздников в России — Новый год! Вся страна окунается в атмосферу волшебства: на улицах зажигаются гирлянды, в магазинах появляются ёлочные игрушки и мандарины, а дома начинают готовиться к встрече праздника с особым трепетом. Этот день символизирует не только завершение старого года, но и надежду на всё самое лучшее в будущем.</p>
+    
+    <p>В преддверии праздника многие семьи любят проводить время за разгадыванием кроссвордов. Особенно популярны среди школьников и взрослых тематические головоломки — например, русский кроссворд, посвящённый новогодним традициям, символам и персонажам, таким как Дед Мороз, Снегурочка или ёлка. Такие задания не только развлекают, но и помогают лучше узнать культуру своей страны.</p>
+    
+    <p class="quote">Но если вы изучаете иностранные языки, почему бы не совместить полезное с приятным? В канун Нового года можно попробовать разгадать английский кроссворд, в котором встречаются слова, связанные с зимними праздниками: Santa Claus, snowman, presents, fireworks. Это отличный способ потренировать язык и почувствовать новогоднее настроение одновременно!</p>
+
+    <p><a href="index.html">← Назад</a></  и сделай в этом коде вместо снежинок при обновлении ссайта пусть падают новогодние подарки .
