@@ -1,0 +1,97 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Страница-1" id="6kCQJK2iiEv8xOHuOEnT">
+    <mxGraphModel dx="1373" dy="1914" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="JaG9dHE9P_XP_o6Ej_PX-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span class=&quot;qwen-markdown-text&quot; data-spm-anchor-id=&quot;a2ty_o01.29997173.0.i7.5df85171HqI0Tr&quot;&gt;Петрова Анна Сергеевна&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="90" x="927" y="-140" as="geometry" />
+        </mxCell>
+        <mxCell id="JaG9dHE9P_XP_o6Ej_PX-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span class=&quot;qwen-markdown-text&quot; data-spm-anchor-id=&quot;a2ty_o01.29997173.0.i13.5df85171HqI0Tr&quot;&gt;Смирнов Алексей Петрович&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="100" x="340" y="-130" as="geometry" />
+        </mxCell>
+        <mxCell id="JaG9dHE9P_XP_o6Ej_PX-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&amp;nbsp;удаление камней в почках" vertex="1">
+          <mxGeometry height="60" width="100" x="300" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="JaG9dHE9P_XP_o6Ej_PX-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="противоспали-тельное средство" vertex="1">
+          <mxGeometry height="60" width="100" x="400" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="JaG9dHE9P_XP_o6Ej_PX-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;мочеиспускание&lt;/div&gt;&lt;div&gt;с кровью&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="100" x="500" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="JaG9dHE9P_XP_o6Ej_PX-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="у&lt;span class=&quot;qwen-markdown-text&quot; data-spm-anchor-id=&quot;a2ty_o01.29997173.0.i24.5df85171HqI0Tr&quot;&gt;даление грыжи&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="100" x="937" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="5fMCFtbMxfLQQ5PMbf0h-17" edge="1" parent="1" source="JaG9dHE9P_XP_o6Ej_PX-15" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" target="5fMCFtbMxfLQQ5PMbf0h-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JaG9dHE9P_XP_o6Ej_PX-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="08.04.2026" vertex="1">
+          <mxGeometry height="60" width="110" x="827" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="JaG9dHE9P_XP_o6Ej_PX-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;strong class=&quot;qwen-markdown-strong&quot;&gt;&lt;span class=&quot;qwen-markdown-text&quot; data-spm-anchor-id=&quot;a2ty_o01.29997173.0.i12.5df85171HqI0Tr&quot;&gt;DOC-77&lt;/span&gt;&lt;/strong&gt;" vertex="1">
+          <mxGeometry height="60" width="100" x="240" y="-130" as="geometry" />
+        </mxCell>
+        <mxCell id="5fMCFtbMxfLQQ5PMbf0h-16" edge="1" parent="1" source="JaG9dHE9P_XP_o6Ej_PX-17" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" target="JaG9dHE9P_XP_o6Ej_PX-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JaG9dHE9P_XP_o6Ej_PX-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;strong class=&quot;qwen-markdown-strong&quot;&gt;&lt;span class=&quot;qwen-markdown-text&quot; data-spm-anchor-id=&quot;a2ty_o01.29997173.0.i6.5df85171HqI0Tr&quot;&gt;P-002&lt;/span&gt;&lt;/strong&gt;" vertex="1">
+          <mxGeometry height="60" width="100" x="827" y="-140" as="geometry" />
+        </mxCell>
+        <mxCell id="5fMCFtbMxfLQQ5PMbf0h-15" edge="1" parent="1" source="JaG9dHE9P_XP_o6Ej_PX-27" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" target="5fMCFtbMxfLQQ5PMbf0h-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JaG9dHE9P_XP_o6Ej_PX-27" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="08.04.2026" vertex="1">
+          <mxGeometry height="60" width="100" x="200" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="JaG9dHE9P_XP_o6Ej_PX-38" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span class=&quot;qwen-markdown-text&quot; data-spm-anchor-id=&quot;a2ty_o01.29997173.0.i8.5df85171HqI0Tr&quot;&gt;г. Санкт-Петербург, Невский пр., д. 25&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="100" x="1017" y="-140" as="geometry" />
+        </mxCell>
+        <mxCell id="seqjBAKrCxOqHTookt6X-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span class=&quot;qwen-markdown-text&quot; data-spm-anchor-id=&quot;a2ty_o01.29997173.0.i26.5df85171HqI0Tr&quot;&gt; Ибупрофен&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="1037" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="seqjBAKrCxOqHTookt6X-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span class=&quot;qwen-markdown-text&quot; data-spm-anchor-id=&quot;a2ty_o01.29997173.0.i27.5df85171HqI0Tr&quot;&gt;Головокружение&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="1157" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="seqjBAKrCxOqHTookt6X-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="ПАЦИЕНТ" vertex="1">
+          <mxGeometry height="30" width="60" x="827" y="-170" as="geometry" />
+        </mxCell>
+        <mxCell id="seqjBAKrCxOqHTookt6X-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&amp;nbsp;ХИРУРГ" vertex="1">
+          <mxGeometry height="30" width="60" x="240" y="-160" as="geometry" />
+        </mxCell>
+        <mxCell id="seqjBAKrCxOqHTookt6X-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&amp;nbsp;ОПЕРАЦИЯ" vertex="1">
+          <mxGeometry height="30" width="60" x="200" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="seqjBAKrCxOqHTookt6X-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="ОПЕРАЦИЯ" vertex="1">
+          <mxGeometry height="30" width="60" x="827" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="5fMCFtbMxfLQQ5PMbf0h-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div class=&quot;qwen-markdown-table-tbody-tr-td-col&quot;&gt;&lt;strong class=&quot;qwen-markdown-strong&quot;&gt;&lt;span class=&quot;qwen-markdown-text&quot; data-spm-anchor-id=&quot;a2ty_o01.29997173.0.i16.5df85171HqI0Tr&quot;&gt;DOC-88&lt;/span&gt;&lt;/strong&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="100" x="827" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="5fMCFtbMxfLQQ5PMbf0h-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span class=&quot;qwen-markdown-text&quot; data-spm-anchor-id=&quot;a2ty_o01.29997173.0.i17.5df85171HqI0Tr&quot;&gt;Кузнецова Елена Викторовна&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="100" x="927" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="5fMCFtbMxfLQQ5PMbf0h-9" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&amp;nbsp;ХИРУРГ" vertex="1">
+          <mxGeometry height="30" width="60" x="827" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="5fMCFtbMxfLQQ5PMbf0h-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;strong class=&quot;qwen-markdown-strong&quot;&gt;&lt;span class=&quot;qwen-markdown-text&quot; data-spm-anchor-id=&quot;a2ty_o01.29997173.0.i0.5df85171HqI0Tr&quot;&gt;P-001&lt;/span&gt;&lt;/strong&gt;" vertex="1">
+          <mxGeometry height="60" width="100" x="230" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="5fMCFtbMxfLQQ5PMbf0h-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span class=&quot;qwen-markdown-text&quot; data-spm-anchor-id=&quot;a2ty_o01.29997173.0.i1.5df85171HqI0Tr&quot;&gt;Иванов Иван Иванович&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="90" x="330" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="5fMCFtbMxfLQQ5PMbf0h-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div class=&quot;qwen-markdown-table-tbody-tr-td-col&quot;&gt;&lt;span class=&quot;qwen-markdown-text&quot; data-spm-anchor-id=&quot;a2ty_o01.29997173.0.i4.5df85171HqI0Tr&quot;&gt;г. Москва, ул. Ленина, д. 10, кв. 5&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="100" x="420" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="5fMCFtbMxfLQQ5PMbf0h-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="ПАЦИЕНТ" vertex="1">
+          <mxGeometry height="30" width="60" x="230" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="5fMCFtbMxfLQQ5PMbf0h-14" edge="1" parent="1" source="JaG9dHE9P_XP_o6Ej_PX-16" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" target="JaG9dHE9P_XP_o6Ej_PX-27" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="700" y="160" as="sourcePoint" />
+            <mxPoint x="750" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
